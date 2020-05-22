@@ -14,7 +14,7 @@ module.exports = {
     resolve: {
         extensions: ['', '.js', '.jsx'],
         alias: {
-            modules: __dirname + '/nome_modules',
+            modules: __dirname + '/node_modules',
             jquery: 'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
             bootstrap: 'modules/admin-lte/bootstrap/js/bootstrap.js'
         }
@@ -37,11 +37,11 @@ module.exports = {
                 plugins: ['transform-object-rest-spread']
             }
         }, {
-            test: /\.css/,
+            test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }, {
-            teste: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
+            test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
             loader: 'file'
-        }]      
+        }]
     }
 }
