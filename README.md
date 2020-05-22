@@ -18,3 +18,12 @@ The startup scripts are
 
 npm run dev e
 npm run production
+
+## Frontend
+
+### Dependencies used
+
+webpack 
+babel para fazer o transpare para react
+admin-lte template usado para aplicação
+react, redux, axios e lodash
