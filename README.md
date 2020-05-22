@@ -8,7 +8,7 @@ My money app it is an application for registration and analysis of payment cycle
 
 Express was used for the web server, 
 Mongoose for data persistence, 
-Mody-parser middleware, 
+Body-parser to middleware, 
 Mongoose-paginate and 
 Node-restful for mongoose and express integration.
 
