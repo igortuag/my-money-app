@@ -4,6 +4,7 @@ import React from 'react'
 import Header from '../common/template/header'
 import SideBar from '../common/template/sideBar'
 import Footer from '../common/template/footer'
+import Messages from '../common/msg/mensages'
 
 export default props => (
     <div className='wrapper'>
@@ -13,5 +14,6 @@ export default props => (
             {props.children}
         </div>
         <Footer />
+        <Messages />
     </div>
 )
