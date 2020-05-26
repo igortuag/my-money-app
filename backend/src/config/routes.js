@@ -12,7 +12,7 @@ module.exports = function(server) {
     protectedApi.use(auth)
 
     const BillingCycle = require('../api/billingCycle/billingCycleService')
-    BillingCycle.register(router, '/billingCycles')
+    BillingCycle.register(protectedApi, '/billingCycles')
 
     /*
     * Open Routes
