@@ -8,7 +8,7 @@ const emailRegex = /\S+@\S+\.\S+/
 const passwordRegex = /((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})/
 
 const sendErrorsFromDB = (res, dbErrors) => {
-    const erros = []
+    const errors = []
     _.forIn(dbErrors.errors, error => errors.push(error.message))
     return res.status(400).json({ errors })
 }
@@ -21,7 +21,7 @@ const login = ( req, res, next) => {
         if (err) {
             return sendErrorsFromDB(res, err)
         } else if (user && bcrypt.compareSync(password, user.password)) {
-            const token = jwt.sign(user, env. authSecret, {
+            const token = jwt.sign(user, env.authSecret, {
                 expiresIn: "1 day"
             })
             const { name, email } = user
@@ -35,7 +35,7 @@ const login = ( req, res, next) => {
 const validateToken = (req, res, next) => {
     const token = req.body.token || ''
 
-    jwt.verify(token, env.authSecret, function (err, decoded) {
+    jwt.verify(token, env.authSecret, function(err, decoded) {
         return res.status(200).send({ valid: !err })
     })
 }
@@ -50,7 +50,7 @@ const signup = (req, res, next) => {
         return res.status(400).send({ errors: ['The e-mail informed has not valid'] })
     }
 
-    if(!password.match(passwordRegex)) {
+    if (!password.match(passwordRegex)) {
         return res.status(400).send({
             errors: [
                 "Password needs: one uppercase letter, one lowercase letter, one number, one special caracter and size bettwen 6 - 20."
@@ -60,10 +60,9 @@ const signup = (req, res, next) => {
 
     const salt = bcrypt.genSaltSync()
     const passwordHash = bcrypt.hashSync(password, salt)
-    if (!bcrypt.compare(confirmPassword, passwordHash)) {
+    if (!bcrypt.compareSync(confirmPassword, passwordHash)) {
         return res.status(400).send({ errors: ['Password does not match.'] })
     }
-
     User.findOne({email}, (err, user) => {
         if (err) {
             return sendErrorsFromDB(res, err)
@@ -82,4 +81,4 @@ const signup = (req, res, next) => {
     })
 }
 
-module.exports = { loging, signup, validateToken }
+module.exports = { login, signup, validateToken }
