@@ -1,29 +1,46 @@
-# my-money-app-ReactJS
 
-My money app it is an application for registration and analysis of payment cycles, such as credit and debit. 
+<h1 align="center">
+<br>
+  <img src="https://www.pngkey.com/png/full/817-8178976_save-more-make-more-money-arrow-cool-pictures.png" alt="CALCULATOR REACT JS" width="120">
+<br>
+<br>
+MY MONEY APP
+</h1>
 
-## Backend
+<p align="center">My money app it is an application for registration and analysis of payment cycles, such as credit and debit. </p>
 
-### Dependencies used
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
-Express was used for the web server, 
-Mongoose for data persistence, 
-Body-parser to middleware, 
-Mongoose-paginate and 
-Node-restful for mongoose and express integration.
+[//]: # 
+<div>
+  <p align="center">
+  <img src="https://drive.google.com/uc?id=1qhHjlGvyaLDAgtJ-f8tu0PIJCKwQvUOw" alt="demo" height="425">
+   </p>
+</div>
 
-To run the application, I also left pm2 for management.
+<hr />
 
-The startup scripts are
+## Features
+[//]: # (Add the features of your project here:)
+This app features all the latest tools and practices in mobile development!
 
-npm run dev e
-npm run production
+- ⚛️ **React Js** — A JavaScript library for building user interfaces
+- ⚛️ **Redux** - Application status controller
+- 💹 **Node Js** — A web framework for Node Js
+- 📄 MongoDB — A cross-platform and open-source document-oriented database
 
-## Frontend
+## Getting started
 
-### Dependencies used
+1. Clone this repo using `git clone https://github.com/igortuag/my-money-app-ReactJS.git`
+2. Move yourself to the appropriate directory: `cd React-Calculator`<br />
+3. Run `npm install` to install dependencies<br />
+4. Run `npm run dev` or `npm run dev production` to run the app
 
-webpack 
-babel para fazer o transpare para react
-admin-lte template usado para aplicação
-react, redux, axios e lodash
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
