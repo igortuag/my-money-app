@@ -18,6 +18,15 @@ MY MONEY APP
 [//]: # 
 <div>
   <p align="center">
+  <img src="https://drive.google.com/uc?id=13i4SA7Npz3mzpf-d0zFQ7-EdZP4GjKoz" alt="demo" height="425">
+   </p>
+</div>
+
+<hr />
+
+[//]: # 
+<div>
+  <p align="center">
   <img src="https://drive.google.com/uc?id=1qhHjlGvyaLDAgtJ-f8tu0PIJCKwQvUOw" alt="demo" height="425">
    </p>
 </div>
