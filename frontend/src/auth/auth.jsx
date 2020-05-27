@@ -28,7 +28,7 @@ class Auth extends Component {
     }
     render() {
         const { loginMode } = this.state
-        const { handSubmit } = this.props
+        const { handleSubmit } = this.props
         return (
             <div className="login-box">
                 <div className="login-logo"><b> My</b> Money</div>
