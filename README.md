@@ -1,7 +1,7 @@
 
 <h1 align="center">
 <br>
-  <img src="https://www.pngkey.com/png/full/817-8178976_save-more-make-more-money-arrow-cool-pictures.png" alt="CALCULATOR REACT JS" width="120">
+  <img src="./resource/Logo.png" alt="CALCULATOR REACT JS" width="120">
 <br>
 <br>
 MY MONEY APP
@@ -18,7 +18,7 @@ MY MONEY APP
 [//]: # 
 <div>
   <p align="center">
-  <img src="https://drive.google.com/uc?id=13i4SA7Npz3mzpf-d0zFQ7-EdZP4GjKoz" alt="demo" height="425">
+  <img src="./resource/Auth.gif" alt="demo" height="425">
    </p>
 </div>
 
@@ -27,7 +27,7 @@ MY MONEY APP
 [//]: # 
 <div>
   <p align="center">
-  <img src="https://drive.google.com/uc?id=1qhHjlGvyaLDAgtJ-f8tu0PIJCKwQvUOw" alt="demo" height="425">
+  <img src="./resource/Crud.gif" alt="demo" height="425">
    </p>
 </div>
 
