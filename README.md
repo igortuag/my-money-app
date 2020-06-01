@@ -35,7 +35,7 @@ MY MONEY APP
 
 ## Features
 [//]: # (Add the features of your project here:)
-This app features all the latest tools and practices in mobile development!
+This app features all the latest tools and practices in web development!
 
 - ⚛️ **React Js** — A JavaScript library for building user interfaces
 - ⚛️ **Redux** - Application status controller
